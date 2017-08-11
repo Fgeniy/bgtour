@@ -1,0 +1,71 @@
+#slides {
+	position: relative;
+	height: 90vh;
+	margin-bottom: 90px;
+	
+}
+
+#slides .slides-container {
+	display: none;
+}
+
+#slides .scrollable {
+	*zoom: 1;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+}
+
+#slides .scrollable:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.slides_text {
+	position: absolute;
+	top:17%;left: 15%;
+	max-width: 35vw;
+	text-align: center;
+}
+.slides_text > p {
+	color: orangered;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+#bgt_app .slides_text h1{font-family: 'Marck Script', sans-serif;}
+
+.slides-container img {
+	
+}
+.slides-navigation {
+	margin: 0 auto;
+	position: absolute;
+	z-index: 3;
+	top: 46%;
+	width: 100%;
+}
+
+.slides-navigation a {
+	position: absolute;
+	display: block;
+	color: rgba(255, 255, 255, 0.44);
+	font-size: 52px;
+	font-weight: bold;
+	&:hover {
+		color: rgb(255, 255, 255);;
+	}
+}
+
+.slides-navigation a.prev {
+	left: 40px;
+	
+}
+
+.slides-navigation a.next {
+	right: 40px;
+	
+}
