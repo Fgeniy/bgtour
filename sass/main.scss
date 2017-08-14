@@ -15,7 +15,7 @@
 	width: 100%;
 	align-items: center;
 	flex-direction: column;
-	z-index: 99999;	
+	z-index: 99999;
 	background-color: $layout-color;
 	box-shadow: inset 0 0 12px rgba(69, 67, 67, 0.53);
 }
@@ -57,8 +57,8 @@
 	color: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
-	
-	
+
+
 
 &:hover{
 	background: $corp_color;
@@ -67,7 +67,7 @@
 	text-shadow: -1px 2px #585858;
 	transition: all .3s ease-in-out;
 	}
-   
+
 }
 .nav_active {
         background-color: $corp_color;
@@ -102,7 +102,7 @@ section.services {
 		background-image: url(../img/services_img1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
-		
+
 	}
 	.services_block {
 		display: -webkit-flex;
@@ -110,14 +110,14 @@ section.services {
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-//		align-items: stretch;	
+//		align-items: stretch;
 		justify-content: space-between;
 		h2 {
 			font-size: 16px;
 		}
 	}
-	
-	
+
+
 	.services_desc {
 		color: #8d8d8d;
 		font-size: 14px;
@@ -171,7 +171,7 @@ section.tour_inspiration {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	height: 700px; 
+	height: 700px;
 	margin-top: 80px;
 	background-image: url("../img/inspiration.jpg");
 	background-attachment: fixed;
@@ -197,7 +197,7 @@ section.tour_inspiration {
 /*---------HOT TOURS PAGE---------------*/
 .hot_tours-bg {
     margin-top: 0;
-    height:300px ;
+    min-height:300px ;
     background-image: url(/img/ht_t_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -208,23 +208,63 @@ section.tour_inspiration {
         font-size: 48px;
     }
 }
+.tours_list {
+	min-height: 50vh;
+	margin-top: 80px;
+	margin-bottom: 200px;
+	img {
+		// display: block;
+		width: 100%;
+		height: 100%;
+		filter: brightness(80%);
+	}
+&__card {
+	position: relative;
 
+}
 
+}
 
+.tours_list__wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	// height: 100%;
+}
+.tour_list__desc {
+	position: absolute;
+	width: 100%;
+	padding: 20px 30px;
+	// height: 100%;
+	z-index: 12;
 
+	bottom: -90px;
 
-
+}
+.tour_list__card:hover .tour_list__desc {
+	bottom: 0;
+	transition: all .3s ease-in-out;
+}
+.tours_list__discount {
+	display: inline-block;
+	padding: 10px 4px;
+	background-color: $font-hover;
+}
+.tours_list__name {
+	margin: 10px 0;
+	font-size: 2em;
+}
 footer {
 	background-color: $layout-color;
-//	
+//
 	.footer_contacts {
 		display: block;
 		padding-bottom: 180px;
-		
+
 		border-bottom: 1px solid $corp_color;
 		padding-bottom: 20px;
 		font-size: 24px;
 	}
-	
+
 }
-@import "@media.scss";	
+@import "@media.scss";

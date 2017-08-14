@@ -23,12 +23,12 @@
 	flex-direction: row
 }
 
-.row-wrap {
+.row-column {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
 	width: 100%;
-	flex-flow: column wrap
+	flex-flow: column nowrap
 }
 
 .space-around {
@@ -44,7 +44,7 @@
 	align-items: stretch
 }
 .padded {
-	padding: 0 250px;
+	padding: 0 350px;
 }
 
 .flexy {
@@ -114,5 +114,5 @@
 		-webkit-box-flex: 0;
 		flex: 1 0 75%
 	}
-	
+
 	}
